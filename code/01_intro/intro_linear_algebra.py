@@ -6,7 +6,6 @@ v = np.array([1, 0, 0, 2])
 u.shape[0]
 
 # Multiplication 
-
 ## vector-vector
 def vector_multiplication(u, v):
     assert u.shape[0] == v.shape[0] # guarantees both arrays have the same size
@@ -22,7 +21,7 @@ def vector_multiplication(u, v):
 
 vector_multiplication(u,v)
 
-### the same result can be achieve with:
+'''the same result can be achieve with:'''
 u.dot(v)
 
 ## Matrix-vector multiplication
@@ -34,8 +33,6 @@ U = np.array([
 
 v = np.array([1, 0.5, 2, 1])
 
-U.shape
-v.shape
 
 def matrix_vector_multiplication(U, v):
     assert U.shape[1] == v.shape[0] #columns of matrix must match rows of vector
